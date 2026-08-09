@@ -1,0 +1,20 @@
+{
+ "case": "Chatbot Arena model-ranking N-sensitivity (non-calibration third case)",
+ "q_full_top5": [
+  "gpt-4o",
+  "gpt-4-turbo",
+  "claude-3-opus",
+  "gemini-1.5-pro",
+  "claude-3-sonnet"
+ ],
+ "R1": 100,
+ "flip_rate_R1": 0.9955,
+ "stability_curve": {
+  "50": 1.0,
+  "100": 0.992,
+  "200": 0.982,
+  "500": 0.912
+ },
+ "verdict": "N-SENSITIVE",
+ "source": "C:\\Users\\Administrator\\AppData\\Roaming\\haolo_desktop\\thread-groups\\default\\outputs\\Five_Papers_MultiReview_Revision14_2026-08-08\\PAPER4\\evidence\\arena_data_cache.zip"
+}

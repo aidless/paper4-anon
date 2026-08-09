@@ -1,0 +1,433 @@
+{
+ "evidence_ledger": {
+  "PAPER1": [
+   {
+    "headline": "C5 real-image DeltaCAF = -0.107",
+    "value": "-0.107",
+    "source": "source-study artifact (not in local archive)",
+    "seeds": "n/a",
+    "estimator": "CAF sync-nosync",
+    "tier": "Primary empirical",
+    "status": "needs source traces",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   },
+   {
+    "headline": "temporal contrast +0.207 / sync +0.021",
+    "value": "+0.207 / +0.021",
+    "source": "source-study 8-condition design (not in local archive)",
+    "seeds": "30 per condition",
+    "estimator": "matched ECE contrast",
+    "tier": "Primary",
+    "status": "needs source traces",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   },
+   {
+    "headline": "joint experiment F=8.16, p=0.0006",
+    "value": "F=8.16, p=0.0006",
+    "source": "joint_full_F_v10_results.json",
+    "seeds": "4-5 tasks x 5 seeds x 6 cells (125 sessions)",
+    "estimator": "two-way ANOVA ECE",
+    "tier": "Pattern-level",
+    "status": "RECOMPUTED: F_a=6.61 p=0.0022 (balanced 15/cell); pairwise family null after Holm/BH",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   },
+   {
+    "headline": "ECE-Brier consistency",
+    "value": "r=0.986",
+    "source": "experiments/ece_calibration.json",
+    "seeds": "10",
+    "estimator": "Pearson",
+    "tier": "Estimator check",
+    "status": "RECOMPUTED",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   }
+  ],
+  "PAPER2": [
+   {
+    "headline": "5-row empirical table (gamma, H, CV(N=5))",
+    "value": "rows in main.tex",
+    "source": "main.tex Table 2 + experiments/mm_epc_*.json",
+    "seeds": "5-30",
+    "estimator": "normalized distance proxy",
+    "tier": "Empirical",
+    "status": "RECOMPUTED CV subset ranges; gamma-JSD Spearman 0.998",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   },
+   {
+    "headline": "empty region {gamma<0.2, CV<0.3}",
+    "value": "empty in 5 rows",
+    "source": "main.tex Table 2",
+    "seeds": "5",
+    "estimator": "threshold grid",
+    "tier": "Descriptive",
+    "status": "threshold-robust within 5 rows; 6 rows missing",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   },
+   {
+    "headline": "Chatbot Arena r(H,dec)=-0.895",
+    "value": "-0.895",
+    "source": "external public data",
+    "seeds": "20 models",
+    "estimator": "Pearson",
+    "tier": "External association",
+    "status": "not re-run locally",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   }
+  ],
+  "PAPER3": [
+   {
+    "headline": "temporal +0.207 / sync +0.021 / 90.8%",
+    "value": "+0.207/+0.021/90.8%",
+    "source": "source-study 8-condition design",
+    "seeds": "30 per condition",
+    "estimator": "matched ECE contrast",
+    "tier": "Primary",
+    "status": "needs source traces; joint-experiment SS check: T 2.8% / alpha 12.6%",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   },
+   {
+    "headline": "self-eval gamma=1.064 [0.76,1.41] (5 seeds)",
+    "value": "1.064",
+    "source": "experiments/e4_n15_results.json",
+    "seeds": "first 5 of 15",
+    "estimator": "gamma_TV mean",
+    "tier": "Exploratory",
+    "status": "REPLACED by 15-seed: 0.991 [0.907,1.085]",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   },
+   {
+    "headline": "calibrated reduction -42%",
+    "value": "-42%",
+    "source": "experiments/e4_n15_results.json",
+    "seeds": "15",
+    "estimator": "paired gamma",
+    "tier": "Exploratory",
+    "status": "REPLACED by -37% (15-seed archive)",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   }
+  ],
+  "PAPER4": [
+   {
+    "headline": "Case1 +0.207/+0.021 reversal",
+    "value": "+0.207/+0.021",
+    "source": "source-study",
+    "seeds": "30",
+    "estimator": "deconfounded contrasts",
+    "tier": "Case study",
+    "status": "needs source traces",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   },
+   {
+    "headline": "Case2 Qwen gamma 0.77 vs 1.38 (LR mode)",
+    "value": "0.77/1.38",
+    "source": "source-study",
+    "seeds": "5",
+    "estimator": "gamma by LR mode",
+    "tier": "Case study",
+    "status": "sign-flip prob 49.6-84.3% at N=5 subsampling",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   },
+   {
+    "headline": "minimal simulation figure",
+    "value": "CV=0.9, gamma=0.35",
+    "source": "main.tex + tmlr_p13/within_condition_results.json",
+    "seeds": "200",
+    "estimator": "simulation",
+    "tier": "Illustration",
+    "status": "CV ranking stable N=5 vs N=30 (Spearman=1.0)",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   }
+  ],
+  "PAPER5": [
+   {
+    "headline": "DeepSeek authority p=0.8 (k=3)",
+    "value": "0.822/0.818/0.661",
+    "source": "paper5_round3_live_logs_20260713 (Round-3)",
+    "seeds": "10/cell",
+    "estimator": "gamma_per_file (clean-normalized W1)",
+    "tier": "Descriptive",
+    "status": "RECOMPUTED in Revision 4; no contrast survives BH (smallest raw p=0.340)",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   },
+   {
+    "headline": "Qwen length n=10",
+    "value": "0.627/0.530/0.752",
+    "source": "recomputed_cell_means_FIXED.json + Round-3 logs",
+    "seeds": "10/cell",
+    "estimator": "gamma_per_file",
+    "tier": "Descriptive",
+    "status": "n=10 formalized in Revision 4; n3/n10 Kendall=0.33 (ordering flip)",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   },
+   {
+    "headline": "Qwen authority n=10",
+    "value": "0.802/0.544/0.818",
+    "source": "recomputed_cell_means_FIXED.json + Round-3 logs",
+    "seeds": "10/cell",
+    "estimator": "gamma_per_file",
+    "tier": "Descriptive",
+    "status": "n=10 formalized; Kendall=1.0 stable",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   },
+   {
+    "headline": "dose-response slopes (deepseek-chat)",
+    "value": "-0.257/-0.096/-0.366",
+    "source": "outputs/meta_analysis_trend.csv",
+    "seeds": "10",
+    "estimator": "slope",
+    "tier": "Sensitivity",
+    "status": "existing evidence; deepseek-v4-pro 0.2/0.5 per-seed not persisted",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   },
+   {
+    "headline": "discriminant validity (verbosity)",
+    "value": "cell-dependent r",
+    "source": "Round-3 response_text",
+    "seeds": "10",
+    "estimator": "seed-level correlation",
+    "tier": "Construct check",
+    "status": "DS cells negative (-0.51..-0.08), Qwen positive (up to 0.88); incomplete",
+    "provenance": "see analyses/input_manifest_20260806.json and analyses/evidence_ledger_20260806.md"
+   }
+  ]
+ },
+ "heldout_validations": {
+  "P1P3_leave_one_task_out_F_v10": {
+   "held_out_results": [
+    {
+     "held_out_task": "fact_2",
+     "n_sessions": 85,
+     "F_alpha": null,
+     "p_alpha": null,
+     "F_T": null,
+     "p_T": null,
+     "dir_alpha_T20": "flat",
+     "delta_alpha_T20": 0.0,
+     "dir_T_alpha0": "flat",
+     "delta_T_alpha0": 0.0
+    },
+    {
+     "held_out_task": "logic_1",
+     "n_sessions": 85,
+     "F_alpha": 0.632,
+     "p_alpha": 0.5347,
+     "F_T": 0.206,
+     "p_T": 0.6516,
+     "dir_alpha_T20": "increase",
+     "delta_alpha_T20": 0.1375,
+     "dir_T_alpha0": "decrease",
+     "delta_T_alpha0": -0.0125
+    },
+    {
+     "held_out_task": "math_5",
+     "n_sessions": 70,
+     "F_alpha": 1.016,
+     "p_alpha": 0.3679,
+     "F_T": null,
+     "p_T": 1.0,
+     "dir_alpha_T20": "increase",
+     "delta_alpha_T20": 0.1,
+     "dir_T_alpha0": "decrease",
+     "delta_T_alpha0": -0.0167
+    },
+    {
+     "held_out_task": "opinion_3",
+     "n_sessions": 105,
+     "F_alpha": 6.61,
+     "p_alpha": 0.0022,
+     "F_T": 2.951,
+     "p_T": 0.0895,
+     "dir_alpha_T20": "increase",
+     "delta_alpha_T20": 0.0542,
+     "dir_T_alpha0": "decrease",
+     "delta_T_alpha0": -0.0125
+    }
+   ],
+   "provenance": {
+    "inputs": [
+     "F:\\Research\\PAPER1_CONSOLIDATED\\joint_full_F_v10_results.json"
+    ],
+    "command": "python scripts/analyze_heldout_20260806.py"
+   },
+   "note": "In-archive leave-one-task cross-validation on the joint F_v10 experiment (T in {10,20}). The archive contains completed sessions for 4 of the 5 planned tasks (metadata: n_tasks=5, planned=150, completed=125; the fifth task has no completed sessions), so only 4 folds are computable. Direction uses cell means of final_ECE; balanced-cell two-way ANOVA uses up to 15 sessions per cell and may be degenerate when a cell loses all distinct values after dropping a task (fact_2 fold)."
+  },
+  "P2_leave_one_condition_out": {
+   "full_r_gamma_H": -0.9977,
+   "loo": [
+    {
+     "dropped": "DS Self-Eval",
+     "r_without": -0.9963
+    },
+    {
+     "dropped": "DS x Qwen",
+     "r_without": -0.9976
+    },
+    {
+     "dropped": "Qwen x DS",
+     "r_without": -0.9997
+    },
+    {
+     "dropped": "Ablation mid",
+     "r_without": -0.9978
+    },
+    {
+     "dropped": "Ablation max",
+     "r_without": -0.9978
+    }
+   ],
+   "permutation_95ci": [
+    -0.9164,
+    0.8897
+   ],
+   "provenance": {
+    "inputs": [
+     "main.tex Table 2 (5-row empirical table)"
+    ],
+    "command": "python scripts/analyze_heldout_20260806.py"
+   },
+   "note": "n=5 rows; leave-one-condition-out and permutation CI reported descriptively (manuscript already notes the n=5 sensitivity)."
+  },
+  "P4_decision_rule_Qwen_n3_vs_n10": {
+   "n10_means": {
+    "Append": 0.6269,
+    "RAG": 0.7524,
+    "n10_order": "RAG>Append"
+   },
+   "n3_first3_means": {
+    "Append": 0.7768,
+    "RAG": 0.7693
+   },
+   "reported_n3_order": "Append>RAG",
+   "reversal_fraction_over_all_120_3subsets": 0.6583,
+   "fraction_reproducing_n3_order": 0.3417,
+   "fraction_giving_reversed_order": 0.6583,
+   "decision": "Criterion (i) satisfied (ordering flips between n=3 and n=10); of the 120 three-seed subsets, only 34.2% reproduce the n=3 Append>RAG ordering and 65.8% give the reversed RAG>Append ordering, i.e., the reversal is majority-supported at n=3 but the 65.8% reproduction rate of the reversed ordering does not meet the 0.8 replication threshold of criterion (iv); under the full rule the comparison is borderline and should be reported with its reversal probability.",
+   "provenance": {
+    "inputs": [
+     "F:\\Research\\PAPER5_CONSOLIDATED\\outputs\\recomputed_cell_means_FIXED.json"
+    ],
+    "command": "python scripts/analyze_heldout_20260806.py"
+   },
+   "note": "Prospective-style application of the frozen decision rule to existing data: the Qwen length ordering flips between n=3 (Append>RAG) and n=10 (RAG>Append); 34.2% of the 120 three-seed subsets reproduce the n=3 Append>RAG ordering and 65.8% give the reversed RAG>Append ordering (reversal reproduction rate 0.658 < 0.8), so criterion (iv) is not met and the comparison is borderline."
+  },
+  "P5_p08_archive_cells": {
+   "cells": [
+    {
+     "cell": "deepseek-v4-pro-Append-Only-authority-p0.8",
+     "model": "deepseek-v4-pro",
+     "arch": "Append-Only",
+     "bias": "authority",
+     "n": 10,
+     "mean": 0.8223,
+     "sd": 0.6925
+    },
+    {
+     "cell": "deepseek-v4-pro-Append-Only-length-p0.8",
+     "model": "deepseek-v4-pro",
+     "arch": "Append-Only",
+     "bias": "length",
+     "n": 10,
+     "mean": 0.5192,
+     "sd": 0.1999
+    },
+    {
+     "cell": "deepseek-v4-pro-RAG+Filter-authority-p0.8",
+     "model": "deepseek-v4-pro",
+     "arch": "RAG+Filter",
+     "bias": "authority",
+     "n": 10,
+     "mean": 0.8178,
+     "sd": 0.3931
+    },
+    {
+     "cell": "deepseek-v4-pro-RAG+Filter-length-p0.8",
+     "model": "deepseek-v4-pro",
+     "arch": "RAG+Filter",
+     "bias": "length",
+     "n": 10,
+     "mean": 0.6691,
+     "sd": 0.3327
+    },
+    {
+     "cell": "deepseek-v4-pro-Summarization-authority-p0.8",
+     "model": "deepseek-v4-pro",
+     "arch": "Summarization",
+     "bias": "authority",
+     "n": 10,
+     "mean": 0.6613,
+     "sd": 0.2368
+    },
+    {
+     "cell": "deepseek-v4-pro-Summarization-length-p0.8",
+     "model": "deepseek-v4-pro",
+     "arch": "Summarization",
+     "bias": "length",
+     "n": 10,
+     "mean": 0.7582,
+     "sd": 0.4198
+    },
+    {
+     "cell": "qwen3.7-plus-Append-Only-authority-p0.8",
+     "model": "qwen3.7-plus",
+     "arch": "Append-Only",
+     "bias": "authority",
+     "n": 10,
+     "mean": 0.8018,
+     "sd": 0.3285
+    },
+    {
+     "cell": "qwen3.7-plus-Append-Only-length-p0.8",
+     "model": "qwen3.7-plus",
+     "arch": "Append-Only",
+     "bias": "length",
+     "n": 10,
+     "mean": 0.6269,
+     "sd": 0.2698
+    },
+    {
+     "cell": "qwen3.7-plus-RAG+Filter-authority-p0.8",
+     "model": "qwen3.7-plus",
+     "arch": "RAG+Filter",
+     "bias": "authority",
+     "n": 10,
+     "mean": 0.8177,
+     "sd": 0.6174
+    },
+    {
+     "cell": "qwen3.7-plus-RAG+Filter-length-p0.8",
+     "model": "qwen3.7-plus",
+     "arch": "RAG+Filter",
+     "bias": "length",
+     "n": 10,
+     "mean": 0.7524,
+     "sd": 0.5412
+    },
+    {
+     "cell": "qwen3.7-plus-Summarization-authority-p0.8",
+     "model": "qwen3.7-plus",
+     "arch": "Summarization",
+     "bias": "authority",
+     "n": 10,
+     "mean": 0.5439,
+     "sd": 0.1616
+    },
+    {
+     "cell": "qwen3.7-plus-Summarization-length-p0.8",
+     "model": "qwen3.7-plus",
+     "arch": "Summarization",
+     "bias": "length",
+     "n": 10,
+     "mean": 0.53,
+     "sd": 0.3093
+    }
+   ],
+   "provenance": {
+    "inputs": [
+     "F:\\Research\\PAPER5_CONSOLIDATED\\outputs\\recomputed_cell_means_FIXED.json"
+    ],
+    "command": "python scripts/analyze_heldout_20260806.py"
+   },
+   "note": "Machine-readable per-cell table at p=0.8 only: 12 cells = 2 models x 3 architectures x 2 bias types. The full 36-cell grid (x 3 contamination rates) is not persisted for deepseek-v4-pro; only deepseek-chat dose-response means (n=10, rates 0.2/0.5/0.8) exist in outputs/meta_analysis_three_rounds.csv. Pairwise family audit (BH) is in p5_robustness.json."
+  }
+ }
+}

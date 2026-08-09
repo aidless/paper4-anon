@@ -1,0 +1,29 @@
+{
+ "prereg": "prereg_p4_prospective_20260809.json (freeze 7227DE1B)",
+ "n_seeds": 30,
+ "full_order": [
+  "direct",
+  "chain_of_thought",
+  "structured_verify"
+ ],
+ "R1_3_order": [
+  "direct",
+  "chain_of_thought",
+  "structured_verify"
+ ],
+ "flip_rate_R1_3": 0.6082,
+ "stability_curve": {
+  "3": 0.6075,
+  "5": 0.5435,
+  "10": 0.4415,
+  "15": 0.4305,
+  "20": 0.3725
+ },
+ "criteria": {
+  "i": false,
+  "ii": "|d| < delta",
+  "iii": true,
+  "iv_rho": 0.6082
+ },
+ "verdict": "NOT-SENSITIVE"
+}

@@ -1,0 +1,182 @@
+[
+ {
+  "seed": 0,
+  "chain_of_thought": 0.6,
+  "direct": 0.8,
+  "structured_verify": 0.4
+ },
+ {
+  "seed": 1,
+  "chain_of_thought": 0.4,
+  "direct": 0.4,
+  "structured_verify": 0.2
+ },
+ {
+  "seed": 2,
+  "chain_of_thought": 0.4,
+  "direct": 0.6,
+  "structured_verify": 0.4
+ },
+ {
+  "seed": 3,
+  "chain_of_thought": 0.6,
+  "direct": 0.4,
+  "structured_verify": 0.6
+ },
+ {
+  "seed": 4,
+  "chain_of_thought": 0.8,
+  "direct": 0.8,
+  "structured_verify": 0.4
+ },
+ {
+  "seed": 5,
+  "chain_of_thought": 0.4,
+  "direct": 0.4,
+  "structured_verify": 0.4
+ },
+ {
+  "seed": 6,
+  "chain_of_thought": 0.2,
+  "direct": 0.6,
+  "structured_verify": 0.4
+ },
+ {
+  "seed": 7,
+  "chain_of_thought": 0.6,
+  "direct": 0.4,
+  "structured_verify": 0.6
+ },
+ {
+  "seed": 8,
+  "chain_of_thought": 0.8,
+  "direct": 0.8,
+  "structured_verify": 0.4
+ },
+ {
+  "seed": 9,
+  "chain_of_thought": 0.4,
+  "direct": 0.4,
+  "structured_verify": 0.2
+ },
+ {
+  "seed": 10,
+  "chain_of_thought": 0.2,
+  "direct": 0.6,
+  "structured_verify": 0.4
+ },
+ {
+  "seed": 11,
+  "chain_of_thought": 0.6,
+  "direct": 0.2,
+  "structured_verify": 0.6
+ },
+ {
+  "seed": 12,
+  "chain_of_thought": 0.6,
+  "direct": 0.8,
+  "structured_verify": 0.4
+ },
+ {
+  "seed": 13,
+  "chain_of_thought": 0.4,
+  "direct": 0.4,
+  "structured_verify": 0.2
+ },
+ {
+  "seed": 14,
+  "chain_of_thought": 0.4,
+  "direct": 0.6,
+  "structured_verify": 0.6
+ },
+ {
+  "seed": 15,
+  "chain_of_thought": 0.6,
+  "direct": 0.4,
+  "structured_verify": 0.6
+ },
+ {
+  "seed": 16,
+  "chain_of_thought": 0.8,
+  "direct": 0.8,
+  "structured_verify": 0.4
+ },
+ {
+  "seed": 17,
+  "chain_of_thought": 0.4,
+  "direct": 0.4,
+  "structured_verify": 0.2
+ },
+ {
+  "seed": 18,
+  "chain_of_thought": 0.4,
+  "direct": 0.6,
+  "structured_verify": 0.2
+ },
+ {
+  "seed": 19,
+  "chain_of_thought": 0.6,
+  "direct": 0.2,
+  "structured_verify": 0.6
+ },
+ {
+  "seed": 20,
+  "chain_of_thought": 0.8,
+  "direct": 0.8,
+  "structured_verify": 0.4
+ },
+ {
+  "seed": 21,
+  "chain_of_thought": 0.4,
+  "direct": 0.4,
+  "structured_verify": 0.2
+ },
+ {
+  "seed": 22,
+  "chain_of_thought": 0.6,
+  "direct": 0.6,
+  "structured_verify": 0.2
+ },
+ {
+  "seed": 23,
+  "chain_of_thought": 0.6,
+  "direct": 0.4,
+  "structured_verify": 0.6
+ },
+ {
+  "seed": 24,
+  "chain_of_thought": 0.8,
+  "direct": 0.8,
+  "structured_verify": 0.4
+ },
+ {
+  "seed": 25,
+  "chain_of_thought": 0.4,
+  "direct": 0.4,
+  "structured_verify": 0.4
+ },
+ {
+  "seed": 26,
+  "chain_of_thought": 0.2,
+  "direct": 0.6,
+  "structured_verify": 0.2
+ },
+ {
+  "seed": 27,
+  "chain_of_thought": 0.6,
+  "direct": 0.4,
+  "structured_verify": 0.6
+ },
+ {
+  "seed": 28,
+  "chain_of_thought": 0.8,
+  "direct": 0.8,
+  "structured_verify": 0.4
+ },
+ {
+  "seed": 29,
+  "chain_of_thought": 0.4,
+  "direct": 0.4,
+  "structured_verify": 0.2
+ }
+]

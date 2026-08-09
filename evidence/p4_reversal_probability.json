@@ -1,0 +1,128 @@
+{
+ "paper": "PAPER4",
+ "date": "2026-08-06",
+ "case2_style_sign_reversal": {
+  "DS_exec_Qwen_eval_30reps": {
+   "n_reps": 30,
+   "d_full_n30": 0.0219,
+   "d5_median": 0.0041,
+   "d5_95ci": [
+    -0.0064,
+    0.1032
+   ],
+   "sign_reversal_prob_n5": 0.496,
+   "min_d5": -0.0064,
+   "max_d5": 0.133
+  },
+  "DS_selfeval_30reps": {
+   "n_reps": 30,
+   "d_full_n30": 0.0104,
+   "d5_median": 0.0,
+   "d5_95ci": [
+    0.0,
+    0.0625
+   ],
+   "sign_reversal_prob_n5": 0.8425,
+   "min_d5": 0.0,
+   "max_d5": 0.0625
+  },
+  "note": "Sign convention: d = gamma_TV - gamma_VT (the stored archive reports mean_difference = gamma_VT - gamma_TV = -0.0219 for the DS-exec/Qwen-eval archive, i.e., the same magnitude with the opposite sign). For both 30-repetition archives, the sign of d is highly unstable when estimated from 5-seed subsamples: 49.6% of DS-exec/Qwen-eval 5-subsets and 84.3% of DS-self-eval 5-subsets produce a sign opposite to the full-sample estimate. This quantifies the N-sensitivity of Case-2-type comparisons and supports reporting reversal probability and CI overlap rather than point estimates."
+ },
+ "cv_ranking_stability_simulation": {
+  "source": "F:\\Research\\tmlr_p13\\within_condition_results.json",
+  "n_conditions": 9,
+  "cv5_vs_cv30": {
+   "spearman": 1.0,
+   "kendall": 1.0
+  },
+  "cv8_vs_cv30": {
+   "spearman": 1.0,
+   "kendall": 1.0
+  },
+  "cv15_vs_cv30": {
+   "spearman": 1.0,
+   "kendall": 1.0
+  },
+  "gamma_ranking_is_monotone_in_alpha": true,
+  "conditions": [
+   {
+    "alpha": 0.0,
+    "gamma": 0.13972034029900382,
+    "cv5": 0.109770362337677,
+    "cv8": 0.08636519865518054,
+    "cv15": 0.06232824205773844,
+    "cv30": 0.04467929668815083
+   },
+   {
+    "alpha": 0.1,
+    "gamma": 0.14482539678395898,
+    "cv5": 0.10451344719987417,
+    "cv8": 0.08345278548963188,
+    "cv15": 0.06101327512004647,
+    "cv30": 0.04292402062821562
+   },
+   {
+    "alpha": 0.2,
+    "gamma": 0.15236892139193603,
+    "cv5": 0.11707740984526684,
+    "cv8": 0.0928658153822857,
+    "cv15": 0.06781499607730904,
+    "cv30": 0.04745992983585084
+   },
+   {
+    "alpha": 0.4,
+    "gamma": 0.17235123817705303,
+    "cv5": 0.09991214371130744,
+    "cv8": 0.07859899696795836,
+    "cv15": 0.05797534985158748,
+    "cv30": 0.041535560533153236
+   },
+   {
+    "alpha": 0.6,
+    "gamma": 0.1985097217346644,
+    "cv5": 0.08560210388059461,
+    "cv8": 0.06782762618959169,
+    "cv15": 0.0487099859441285,
+    "cv30": 0.03446675839346078
+   },
+   {
+    "alpha": 0.8,
+    "gamma": 0.22127700485466573,
+    "cv5": 0.06967340166980975,
+    "cv8": 0.055196735846995595,
+    "cv15": 0.04089603944813516,
+    "cv30": 0.028358819903700625
+   },
+   {
+    "alpha": 1.0,
+    "gamma": 0.2378801072062159,
+    "cv5": 0.07787831211034017,
+    "cv8": 0.06123784877705353,
+    "cv15": 0.04510231370626293,
+    "cv30": 0.03164908551228642
+   },
+   {
+    "alpha": 1.5,
+    "gamma": 0.24843470442666238,
+    "cv5": 0.06933480453734671,
+    "cv8": 0.05444603489173085,
+    "cv15": 0.04060442660363846,
+    "cv30": 0.028060203875157994
+   },
+   {
+    "alpha": 2.0,
+    "gamma": 0.2530784472322245,
+    "cv5": 0.079749213178116,
+    "cv8": 0.06376805518630897,
+    "cv15": 0.04684300438030417,
+    "cv30": 0.03268822475802209
+   }
+  ],
+  "note": "In the 200-seed simulation, gamma rankings are monotone in alpha and CV rankings are perfectly stable between N=5 and N=30 (Spearman/Kendall = 1.0). The simulation therefore does NOT exhibit rank reversal; the N-sensitivity signature appears as a systematic CV magnitude decrease with N, not as a ranking flip. Rank instability is instead observed in the real-data Case-2-style subsample analysis above, which is where reversal probability matters."
+ },
+ "decision_rule_draft": {
+  "class": "B (method/definition addition, no new data required)",
+  "rule": "Declare N-sensitivity for a comparison of quantities q_N vs q_{N'} (N' > N) when ALL of the following hold: (1) [Reversal] the sign or rank order of the estimated comparison differs between N and N' under fixed analysis code, seeds, and aggregation; (2) [Magnitude] |q_N - q_{N'}| exceeds a predeclared equivalence margin m (e.g., m = 0.10 in standardized units), not merely statistical significance; (3) [Replication] the reversal reproduces in at least a predeclared fraction (e.g., 80%) of bootstrap or seed-subsample replications of size N drawn from the available seed pool; (4) [Scope] the reversal is not attributable to a change in target quantity, estimator, or exclusion rule between N and N' (checked by frozen code and a change log). If (1)-(3) hold but (4) is violated, the comparison is not N-sensitive but design-sensitive.",
+  "note": "Draft text for the manuscript methods section; to be finalized with the authors before insertion (no results are fabricated)."
+ }
+}

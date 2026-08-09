@@ -1,0 +1,137 @@
+{
+ "joint_F_v10": {
+  "path": "F:\\Research\\PAPER1_CONSOLIDATED\\joint_full_F_v10_results.json",
+  "sha256": "ECCD9E0DAEB51CF18FF3965B8218D3969BBC7B6D1CA7A04110820A39CC42E397",
+  "size": 1089256
+ },
+ "p5_cells": {
+  "path": "F:\\Research\\PAPER5_CONSOLIDATED\\outputs\\recomputed_cell_means_FIXED.json",
+  "sha256": "CF8EE5460D18F532269485B20CCFECDE3D05EA03D069360EF049A38A259FF6DC",
+  "size": 4741
+ },
+ "e4_n15": {
+  "path": "F:\\Research\\experiments\\e4_n15_results.json",
+  "sha256": "46DEBED467A0CD76CE0586674D1A43858791CE598833A274F2E4C76A355C6D89",
+  "size": 5118
+ },
+ "ece_calibration": {
+  "path": "F:\\Research\\experiments\\ece_calibration.json",
+  "sha256": "7226636113CBDA2F7709D74297AF7F4336FCDC2256885B55B78593566F6B2A85",
+  "size": 22648
+ },
+ "mm_multi": {
+  "path": "F:\\Research\\experiments\\mm_epc_multi_seed_final.json",
+  "sha256": "477A0E621DBAF4071540453719DE9D75763EC0AD56D122F4F91F7BF7CB69E1E7",
+  "size": 62635
+ },
+ "mm_multi_ds": {
+  "path": "F:\\Research\\experiments\\mm_epc_multi_seed_ds_final.json",
+  "sha256": "6F2F01F87F294FEA96F4F796E8B1A2BB1C2A5D827E8CDB22BB33090739826959",
+  "size": 62548
+ },
+ "mm_ablation_max": {
+  "path": "F:\\Research\\experiments\\mm_epc_ablation_max.json",
+  "sha256": "EE5931F836BD8513A3C9B72A15958F2A91788B786868F1CAC857AA78FC36C06E",
+  "size": 17609
+ },
+ "mm_qwen37": {
+  "path": "F:\\Research\\experiments\\mm_epc_qwen37_final.json",
+  "sha256": "60BD50B9C91BA95208101D51B44B185D11E8A8D388AFB37A3A4FF52BB63F8FD6",
+  "size": 15132
+ },
+ "gamma_jsd": {
+  "path": "F:\\Research\\experiments\\gamma_jsd_correlation.json",
+  "sha256": "3BC131D586D8E48F222FD5862156FA074C7CDA3003814844D2E90F4386277083",
+  "size": 23980
+ },
+ "within_condition": {
+  "path": "F:\\Research\\tmlr_p13\\within_condition_results.json",
+  "sha256": "3096E501B0AFF62BD51A5097BF776FCFD634AA733DED70D16CC703AD352319D7",
+  "size": 3985
+ },
+ "canonical_v5": {
+  "path": "F:\\Research\\CALIBRATION_EFFECTS\\canonical_results_v5.json",
+  "sha256": "4245B5195C819C90CEE021B4957E4AEEF75A06B1BCB724631A05560DA045A1CE",
+  "size": 43603
+ },
+ "p5_protocol_run": {
+  "path": "F:\\Research\\PAPER5_CONSOLIDATED\\outputs\\protocol_run.jsonl",
+  "sha256": "8476C6F6E14E389B51C5303DF9189A05763BC15D79C13AE5479EA96B5B911A47",
+  "size": 11256
+ },
+ "p5_protocol_summary": {
+  "path": "F:\\Research\\PAPER5_CONSOLIDATED\\outputs\\protocol_run_summary.json",
+  "sha256": "4C4984C90F79D86429AE3DD5792C036F3A221C78D47D5E2A01E01C86812575AB",
+  "size": 6590
+ },
+ "p5_meta3": {
+  "path": "F:\\Research\\PAPER5_CONSOLIDATED\\outputs\\meta_analysis_three_rounds.csv",
+  "sha256": "F00B1F00DA5D17FBCDAB962495C21DCED8591702526FFE4F6D7521522A1DF4DD",
+  "size": 2319
+ },
+ "p5_meta_trend": {
+  "path": "F:\\Research\\PAPER5_CONSOLIDATED\\outputs\\meta_analysis_trend.csv",
+  "sha256": "FBDAEC614E07529C59C7425A72DCF455B33BA769595B6E2253922D3E1A11577A",
+  "size": 227
+ },
+ "p5_theta": {
+  "path": "F:\\Research\\PAPER5_CONSOLIDATED\\outputs\\theta_sweep_summary.json",
+  "sha256": "B2FB172E83317091536156EAC421BCA22B8E40273C418FCAA20A1CBADF79DE45",
+  "size": 499
+ },
+ "p5_judge": {
+  "path": "F:\\Research\\PAPER5_CONSOLIDATED\\outputs\\external_judge_summary.json",
+  "sha256": "9EC938520E53EDF032664E1F9614DBBA1AF950F37B809D1889B12E5F6A9F7F75",
+  "size": 1112
+ },
+ "PAPER1_main_tex": {
+  "path": "C:\\Users\\Administrator\\AppData\\Roaming\\haolo_desktop\\thread-groups\\default\\outputs\\Five_Papers_MultiReview_Revision3_2026-08-06\\PAPER1\\source\\main.tex",
+  "sha256": "8D90B0AEAB96A23FA2593B4569D03F0F273842F2595CC6D0F4FEC325A1E0911D",
+  "size": 59077
+ },
+ "PAPER1_main_pdf": {
+  "path": "C:\\Users\\Administrator\\AppData\\Roaming\\haolo_desktop\\thread-groups\\default\\outputs\\Five_Papers_MultiReview_Revision3_2026-08-06\\PAPER1\\main.pdf",
+  "sha256": "146D4CC392309ADBC15FAB7352AFF374DB3C371E22373EA2C5CE82556EEAC130",
+  "size": 454173
+ },
+ "PAPER2_main_tex": {
+  "path": "C:\\Users\\Administrator\\AppData\\Roaming\\haolo_desktop\\thread-groups\\default\\outputs\\Five_Papers_MultiReview_Revision3_2026-08-06\\PAPER2\\source\\main.tex",
+  "sha256": "A23299923B22F2655EF001423E3B3203282A46C9F8ECA437024341C88578F203",
+  "size": 30606
+ },
+ "PAPER2_main_pdf": {
+  "path": "C:\\Users\\Administrator\\AppData\\Roaming\\haolo_desktop\\thread-groups\\default\\outputs\\Five_Papers_MultiReview_Revision3_2026-08-06\\PAPER2\\main.pdf",
+  "sha256": "D398E2E5036126F1F5B1534D2AFCEF1C71BAA9CE0D65A0EF35D8A281192EBAD8",
+  "size": 462062
+ },
+ "PAPER3_main_tex": {
+  "path": "C:\\Users\\Administrator\\AppData\\Roaming\\haolo_desktop\\thread-groups\\default\\outputs\\Five_Papers_MultiReview_Revision3_2026-08-06\\PAPER3\\source\\main.tex",
+  "sha256": "C0C0E9FD3EB5DFE1A898CE633BCDB8F4B66D2A89FFD9DB2ADFB236F8D2DB61A3",
+  "size": 44400
+ },
+ "PAPER3_main_pdf": {
+  "path": "C:\\Users\\Administrator\\AppData\\Roaming\\haolo_desktop\\thread-groups\\default\\outputs\\Five_Papers_MultiReview_Revision3_2026-08-06\\PAPER3\\main.pdf",
+  "sha256": "BFC144EC1CA60A9DE73C1310F68796236DBC49C32BA117CFAA65B45F4577295D",
+  "size": 353859
+ },
+ "PAPER4_main_tex": {
+  "path": "C:\\Users\\Administrator\\AppData\\Roaming\\haolo_desktop\\thread-groups\\default\\outputs\\Five_Papers_MultiReview_Revision3_2026-08-06\\PAPER4\\source\\main.tex",
+  "sha256": "A0928608B62A74446A5235FF99708CAD57A0622BA0BE0DE03F43066FC3007E89",
+  "size": 52101
+ },
+ "PAPER4_main_pdf": {
+  "path": "C:\\Users\\Administrator\\AppData\\Roaming\\haolo_desktop\\thread-groups\\default\\outputs\\Five_Papers_MultiReview_Revision3_2026-08-06\\PAPER4\\main.pdf",
+  "sha256": "F6718ECAD2CC0DC9BCE05481636760C896792C1CBD3C52829B510DE83CCCF80B",
+  "size": 346205
+ },
+ "PAPER5_main_tex": {
+  "path": "C:\\Users\\Administrator\\AppData\\Roaming\\haolo_desktop\\thread-groups\\default\\outputs\\Five_Papers_MultiReview_Revision3_2026-08-06\\PAPER5\\source\\main.tex",
+  "sha256": "DE849C82BC2E198123B71AA211225A2575F1924723030B0014DBECCF3FED8368",
+  "size": 71039
+ },
+ "PAPER5_main_pdf": {
+  "path": "C:\\Users\\Administrator\\AppData\\Roaming\\haolo_desktop\\thread-groups\\default\\outputs\\Five_Papers_MultiReview_Revision3_2026-08-06\\PAPER5\\main.pdf",
+  "sha256": "D55EC08160F365577170D28DAAFCA93B6257B1B5F4A56C9896753A5706437CE2",
+  "size": 505102
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "case": "CLEVR-CoGenT method-ranking N-sensitivity (independent vision domain)",
+ "full_order": "object_centric",
+ "R2": 5,
+ "R1": 2,
+ "flip_rate_R1_2": 0.0,
+ "flip_rate_R1_3": 0.0,
+ "verdict_R1_2": "NOT-SENSITIVE",
+ "source": "enwi_p1_formal p1-final-analysis-20260807.json"
+}

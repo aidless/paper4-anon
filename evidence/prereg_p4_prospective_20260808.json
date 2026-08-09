@@ -1,0 +1,27 @@
+{
+ "title": "P4 prospective validation on Round-4 coupling data",
+ "date": "2026-08-08",
+ "data": "Round-4 formal collection (deepseek-v4-pro/v4-flash memory-architecture grid, 36 cells x 30 seeds; P5 evidence round4_live.zip)",
+ "decision_function_Q": "argmin-Gamma architecture ordering within each (model, bias, rate) cell",
+ "resolutions": {
+  "R1": 3,
+  "R2": 30
+ },
+ "equivalence_delta": 0.05,
+ "replication_threshold": 0.8,
+ "familywise_alpha": 0.05,
+ "criteria": [
+  "i: Q(R1) != Q(R2)",
+  "ii: corrected CI of contrast excludes [-delta, delta]",
+  "iii: target & estimator unchanged",
+  "iv: reversal reproduces in >= 80% of R1 subsamples"
+ ],
+ "outputs": [
+  "P(Q flip) curve n=3..30",
+  "per-cell verdict (N-SENSITIVE/BORDERLINE/NOT)",
+  "four-criterion decision records"
+ ],
+ "freeze": {
+  "prereg_json": "5539A591299A41A95D3D960526E3BC6D674D0A61502969D10243890E6976446E"
+ }
+}

@@ -1,0 +1,198 @@
+{
+ "prereg": "prereg_p4_prospective_20260808.json",
+ "cells": 12,
+ "verdicts": {
+  "deepseek-v4-flash|authority|p0.2": {
+   "q3": [
+    "Summarization",
+    "RAG+Filter",
+    "Append-Only"
+   ],
+   "q30": [
+    "Summarization",
+    "Append-Only",
+    "RAG+Filter"
+   ],
+   "flip": true,
+   "rho": 0.2022,
+   "criterion_ii": "|d| < delta",
+   "verdict": "BORDERLINE"
+  },
+  "deepseek-v4-flash|authority|p0.5": {
+   "q3": [
+    "RAG+Filter",
+    "Append-Only",
+    "Summarization"
+   ],
+   "q30": [
+    "Append-Only",
+    "Summarization",
+    "RAG+Filter"
+   ],
+   "flip": true,
+   "rho": 0.1623,
+   "criterion_ii": "|d| < delta",
+   "verdict": "BORDERLINE"
+  },
+  "deepseek-v4-flash|authority|p0.8": {
+   "q3": [
+    "Append-Only",
+    "Summarization",
+    "RAG+Filter"
+   ],
+   "q30": [
+    "Append-Only",
+    "RAG+Filter",
+    "Summarization"
+   ],
+   "flip": true,
+   "rho": 0.2751,
+   "criterion_ii": "|d| < delta",
+   "verdict": "BORDERLINE"
+  },
+  "deepseek-v4-flash|length|p0.2": {
+   "q3": [
+    "Append-Only",
+    "Summarization",
+    "RAG+Filter"
+   ],
+   "q30": [
+    "Summarization",
+    "RAG+Filter",
+    "Append-Only"
+   ],
+   "flip": true,
+   "rho": 0.1101,
+   "criterion_ii": "|d| >= delta",
+   "verdict": "BORDERLINE"
+  },
+  "deepseek-v4-flash|length|p0.5": {
+   "q3": [
+    "RAG+Filter",
+    "Summarization",
+    "Append-Only"
+   ],
+   "q30": [
+    "Summarization",
+    "RAG+Filter",
+    "Append-Only"
+   ],
+   "flip": true,
+   "rho": 0.1867,
+   "criterion_ii": "|d| >= delta",
+   "verdict": "BORDERLINE"
+  },
+  "deepseek-v4-flash|length|p0.8": {
+   "q3": [
+    "RAG+Filter",
+    "Append-Only",
+    "Summarization"
+   ],
+   "q30": [
+    "Summarization",
+    "RAG+Filter",
+    "Append-Only"
+   ],
+   "flip": true,
+   "rho": 0.0576,
+   "criterion_ii": "|d| >= delta",
+   "verdict": "BORDERLINE"
+  },
+  "deepseek-v4-pro|authority|p0.2": {
+   "q3": [
+    "Summarization",
+    "Append-Only",
+    "RAG+Filter"
+   ],
+   "q30": [
+    "Summarization",
+    "Append-Only",
+    "RAG+Filter"
+   ],
+   "flip": false,
+   "rho": 0.5357,
+   "criterion_ii": "n/a",
+   "verdict": "NOT-SENSITIVE"
+  },
+  "deepseek-v4-pro|authority|p0.5": {
+   "q3": [
+    "Summarization",
+    "Append-Only",
+    "RAG+Filter"
+   ],
+   "q30": [
+    "Summarization",
+    "Append-Only",
+    "RAG+Filter"
+   ],
+   "flip": false,
+   "rho": 0.3764,
+   "criterion_ii": "n/a",
+   "verdict": "NOT-SENSITIVE"
+  },
+  "deepseek-v4-pro|authority|p0.8": {
+   "q3": [
+    "RAG+Filter",
+    "Summarization",
+    "Append-Only"
+   ],
+   "q30": [
+    "Summarization",
+    "Append-Only",
+    "RAG+Filter"
+   ],
+   "flip": true,
+   "rho": 0.0505,
+   "criterion_ii": "|d| >= delta",
+   "verdict": "BORDERLINE"
+  },
+  "deepseek-v4-pro|length|p0.2": {
+   "q3": [
+    "Summarization",
+    "RAG+Filter",
+    "Append-Only"
+   ],
+   "q30": [
+    "Summarization",
+    "Append-Only",
+    "RAG+Filter"
+   ],
+   "flip": true,
+   "rho": 0.12,
+   "criterion_ii": "|d| < delta",
+   "verdict": "BORDERLINE"
+  },
+  "deepseek-v4-pro|length|p0.5": {
+   "q3": [
+    "Summarization",
+    "Append-Only",
+    "RAG+Filter"
+   ],
+   "q30": [
+    "Summarization",
+    "Append-Only",
+    "RAG+Filter"
+   ],
+   "flip": false,
+   "rho": 0.7946,
+   "criterion_ii": "n/a",
+   "verdict": "NOT-SENSITIVE"
+  },
+  "deepseek-v4-pro|length|p0.8": {
+   "q3": [
+    "Summarization",
+    "Append-Only",
+    "RAG+Filter"
+   ],
+   "q30": [
+    "Summarization",
+    "Append-Only",
+    "RAG+Filter"
+   ],
+   "flip": false,
+   "rho": 0.47,
+   "criterion_ii": "n/a",
+   "verdict": "NOT-SENSITIVE"
+  }
+ }
+}

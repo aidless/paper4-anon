@@ -1,0 +1,26 @@
+{
+ "title": "P4 prospective validation: prompting-strategy ranking on a fresh 30-seed collection",
+ "date": "2026-08-09",
+ "status": "PREREGISTERED BEFORE COLLECTION",
+ "data": "New collection (deepseek-v4-flash, 30 independent seeds x 3 prompting strategies x 5 GSM8K-style problems per seed); no P4-archived data used",
+ "decision_function_Q": "prompting-strategy ranking by solve accuracy (chain-of-thought / direct / structured-verify)",
+ "resolutions": {
+  "R1": 3,
+  "R2": 30
+ },
+ "equivalence_delta": 0.05,
+ "replication_threshold": 0.8,
+ "familywise_alpha": 0.05,
+ "criteria": [
+  "i: Q(R1) != Q(R2)",
+  "ii: corrected CI of the flip contrast excludes [-delta, delta]",
+  "iii: target & estimator unchanged",
+  "iv: flip reproduces in >= 80% of R1 subsamples"
+ ],
+ "outputs": [
+  "P(Q flip) curve n=3..30",
+  "per-cell verdict",
+  "four-criterion records"
+ ],
+ "freeze_sha256": "7227DE1BAE0E8C770AD41537EF726960A293BB043ED38CD7F710A841D5EA54B8"
+}
