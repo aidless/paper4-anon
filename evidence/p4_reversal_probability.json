@@ -29,7 +29,7 @@
   "note": "Sign convention: d = gamma_TV - gamma_VT (the stored archive reports mean_difference = gamma_VT - gamma_TV = -0.0219 for the DS-exec/Qwen-eval archive, i.e., the same magnitude with the opposite sign). For both 30-repetition archives, the sign of d is highly unstable when estimated from 5-seed subsamples: 49.6% of DS-exec/Qwen-eval 5-subsets and 84.3% of DS-self-eval 5-subsets produce a sign opposite to the full-sample estimate. This quantifies the N-sensitivity of Case-2-type comparisons and supports reporting reversal probability and CI overlap rather than point estimates."
  },
  "cv_ranking_stability_simulation": {
-  "source": "F:\\Research\\tmlr_p13\\within_condition_results.json",
+  "source": "<ARCHIVE_ROOT>\\tmlr_p13\\within_condition_results.json",
   "n_conditions": 9,
   "cv5_vs_cv30": {
    "spearman": 1.0,

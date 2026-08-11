@@ -245,7 +245,7 @@
    ],
    "provenance": {
     "inputs": [
-     "F:\\Research\\PAPER1_CONSOLIDATED\\joint_full_F_v10_results.json"
+     "<ARCHIVE_ROOT>\\PAPER1_CONSOLIDATED\\joint_full_F_v10_results.json"
     ],
     "command": "python scripts/analyze_heldout_20260806.py"
    },
@@ -304,7 +304,7 @@
    "decision": "Criterion (i) satisfied (ordering flips between n=3 and n=10); of the 120 three-seed subsets, only 34.2% reproduce the n=3 Append>RAG ordering and 65.8% give the reversed RAG>Append ordering, i.e., the reversal is majority-supported at n=3 but the 65.8% reproduction rate of the reversed ordering does not meet the 0.8 replication threshold of criterion (iv); under the full rule the comparison is borderline and should be reported with its reversal probability.",
    "provenance": {
     "inputs": [
-     "F:\\Research\\PAPER5_CONSOLIDATED\\outputs\\recomputed_cell_means_FIXED.json"
+     "<ARCHIVE_ROOT>\\PAPER5_CONSOLIDATED\\outputs\\recomputed_cell_means_FIXED.json"
     ],
     "command": "python scripts/analyze_heldout_20260806.py"
    },
@@ -423,7 +423,7 @@
    ],
    "provenance": {
     "inputs": [
-     "F:\\Research\\PAPER5_CONSOLIDATED\\outputs\\recomputed_cell_means_FIXED.json"
+     "<ARCHIVE_ROOT>\\PAPER5_CONSOLIDATED\\outputs\\recomputed_cell_means_FIXED.json"
     ],
     "command": "python scripts/analyze_heldout_20260806.py"
    },
