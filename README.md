@@ -1,4 +1,4 @@
-# N-Sensitivity in LLM Evaluation: A Diagnostic Framework Illustrated by Two Case Studies
+# N-Sensitivity in LLM Evaluation: A Diagnostic Framework Illustrated by Four Case Studies
 
 Anonymous artifact bundle (double-blind review).
 
