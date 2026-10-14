@@ -11,6 +11,21 @@ Anonymous artifact bundle (double-blind review).
 - Evidence hashes: recompute SHA-256 over each file in `evidence/` and compare with `evidence_manifest.json`.
 - Manuscript: compile `source/main.tex` with TeX Live (the bundle includes the TMLR style files).
 
+## CI status: the evidence-chain job is red **by design**
+
+`.github/workflows/ci.yml` compares every file in `evidence/` against
+`evidence_manifest.json` and exits non-zero on any mismatch or absence. As of
+last measurement it reports **14/24 match, 8 differ, 2 absent** (the two absent
+are `p4_prospective_collect.log` / `.err`, which were dropped from the bundle
+as run-time byproducts).
+
+The gate is deliberately left red rather than silenced: re-recording the
+manifest would overwrite hashes that were published against this bundle, and
+that is a reviewer-facing decision, not a CI one. The drift is pre-existing —
+it is recorded here so a red badge is not mistaken for a broken build, and so
+nobody "fixes" it by rewriting the manifest. Read the CI log for the current
+per-file comparison.
+
 _This repository is anonymized for review; author identity will be restored at camera-ready._
 
 ## License
